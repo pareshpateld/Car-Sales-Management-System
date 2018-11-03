@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8EB05142-67D8-4519-83B9-00ABC4B1179A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Car_Sales_Management_System</RootNamespace>
+    <AssemblyName>Car Sales Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddDone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDone.Designer.cs">
+      <DependentUpon>AddDone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Carpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Carpage.Designer.cs">
+      <DependentUpon>Carpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePasswordDone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePasswordDone.Designer.cs">
+      <DependentUpon>ChangePasswordDone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteDone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteDone.Designer.cs">
+      <DependentUpon>DeleteDone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employeepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employeepage.Designer.cs">
+      <DependentUpon>Employeepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoicepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoicepage.Designer.cs">
+      <DependentUpon>Invoicepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loginpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loginpage.Designer.cs">
+      <DependentUpon>Loginpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Homepage.Designer.cs">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecordDone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecordDone.Designer.cs">
+      <DependentUpon>RecordDone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaveDone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveDone.Designer.cs">
+      <DependentUpon>SaveDone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchDone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchDone.Designer.cs">
+      <DependentUpon>SearchDone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Servicespage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicespage.Designer.cs">
+      <DependentUpon>Servicespage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignupDone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignupDone.Designer.cs">
+      <DependentUpon>SignupDone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateDone.Designer.cs">
+      <DependentUpon>UpdateDone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInvalid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInvalid.Designer.cs">
+      <DependentUpon>UserInvalid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomeMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomeMessage.Designer.cs">
+      <DependentUpon>WelcomeMessage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddDone.resx">
+      <DependentUpon>AddDone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Carpage.resx">
+      <DependentUpon>Carpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePasswordDone.resx">
+      <DependentUpon>ChangePasswordDone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteDone.resx">
+      <DependentUpon>DeleteDone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employeepage.resx">
+      <DependentUpon>Employeepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoicepage.resx">
+      <DependentUpon>Invoicepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loginpage.resx">
+      <DependentUpon>Loginpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Homepage.resx">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RecordDone.resx">
+      <DependentUpon>RecordDone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveDone.resx">
+      <DependentUpon>SaveDone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchDone.resx">
+      <DependentUpon>SearchDone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicespage.resx">
+      <DependentUpon>Servicespage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignupDone.resx">
+      <DependentUpon>SignupDone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateDone.resx">
+      <DependentUpon>UpdateDone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInvalid.resx">
+      <DependentUpon>UserInvalid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomeMessage.resx">
+      <DependentUpon>WelcomeMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lamborghini_huracan_spyder_side_view_111331_3840x2400.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\securelogon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient-blue-white-linear-1920x1080-c2-ffffff-87ceeb-a-90-f-14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Logout Rounded-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-account-icon-256x256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webp.net-resizeimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webp.net-resizeimage %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rNy1Z4d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lamborghini_aventador_lp_750_side_view_109145_1400x1050.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1499378761_solid-travel-tourism-car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-small-new_grande.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1499380514_simpline_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rotation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diskette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pin-code.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\norecord.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
